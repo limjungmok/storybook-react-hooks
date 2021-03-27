@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import ResizeProvider from './hooks/useResize';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ResizeProvider>
     <App />
-  </React.StrictMode>,
+  </ResizeProvider>,
   document.getElementById('root')
 );
 
